@@ -17,9 +17,7 @@ import {
   Menu,
   Segment,
 } from 'semantic-ui-react';
-import Home from './Home'
-import Works from './Works'
-import About from './About'
+import { Home, Works, About } from './components'
 import Profile from './images/profile.png'
 
 class Portfolio extends Component {
