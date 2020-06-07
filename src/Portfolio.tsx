@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './Portfolio.css';
 import {
   Container,
@@ -20,17 +26,21 @@ class Portfolio extends Component {
       <div className='container'>
         <Menu fixed='top' inverted>
           <Container>
-            <Menu.Item as='a' header>
-              <Image
-                src={`${Profile}`}
-                size='mini'
-                circular
-                style={{ marginRight: '1.5em' }}
-              />Portfolio</Menu.Item>
-            <Menu.Item as='a'>Home</Menu.Item>
-            <Menu.Item as='a'>Works</Menu.Item>
-            <Menu.Item as='a'>About</Menu.Item>
-
+            <Router>
+              <Menu.Item as='a' header>
+                <Link to="/">
+                  <Image
+                    src={`${Profile}`}
+                    size='mini'
+                    circular
+                    style={{ marginRight: '1.5em' }}
+                  />Portfolio
+                </Link>
+              </Menu.Item>
+              <Menu.Item as='a'>Home</Menu.Item>
+              <Menu.Item as='a'>Works</Menu.Item>
+              <Menu.Item as='a'>About</Menu.Item>
+            </Router>
           </Container>
         </Menu>
 
