@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Portfolio from './Portfolio.tsx';
+import Portfolio from './Portfolio';
 import 'semantic-ui-css/semantic.min.css'
 
 ReactDOM.render(

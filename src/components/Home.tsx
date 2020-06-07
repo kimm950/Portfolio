@@ -10,7 +10,7 @@ import {
   Menu,
   Segment,
 } from 'semantic-ui-react';
-import Profile from './images/profile.png'
+import Profile from '../images/profile.png'
 
 const Home = () => {
   return (
