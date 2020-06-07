@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './Portfolio.css';
 import {
   Container,
@@ -18,21 +24,27 @@ class Portfolio extends Component {
   render() {
     return (
       <div className='container'>
-        <Menu fixed='top' inverted>
-          <Container>
-            <Menu.Item as='a' header>
-              <Image
-                src={`${Profile}`}
-                size='mini'
-                circular
-                style={{ marginRight: '1.5em' }}
-              />Portfolio</Menu.Item>
-            <Menu.Item as='a'>Home</Menu.Item>
-            <Menu.Item as='a'>Works</Menu.Item>
-            <Menu.Item as='a'>About</Menu.Item>
-
-          </Container>
-        </Menu>
+        <Router>
+          <Menu fixed='top' inverted>
+            <Container>
+              <Route>
+                <Link to="/">
+                  <Menu.Item as='a' header>
+                    <Image
+                      src={`${Profile}`}
+                      size='mini'
+                      circular
+                      style={{ marginRight: '1.5em' }}
+                    />Portfolio
+              </Menu.Item>
+                </Link>
+                <Menu.Item as='a'>Home</Menu.Item>
+                <Menu.Item as='a'>Works</Menu.Item>
+                <Menu.Item as='a'>About</Menu.Item>
+              </Route>
+            </Container>
+          </Menu>
+        </Router>
 
         <Container text style={{ marginTop: '7em' }}>
           <Header as='h1'>Resume</Header>
@@ -132,7 +144,7 @@ class Portfolio extends Component {
             Japanese
           </Header>
         </Container>
-      </div>
+      </div >
     );
   }
 }
