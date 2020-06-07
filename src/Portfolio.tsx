@@ -19,6 +19,7 @@ import {
 } from 'semantic-ui-react';
 import Home from './Home'
 import Works from './Works'
+import About from './About'
 import Profile from './images/profile.png'
 
 class Portfolio extends Component {
@@ -52,6 +53,7 @@ class Portfolio extends Component {
           </Menu>
           <Route exact path='/' component={Home} />
           <Route exact path='/works' component={Works} />
+          <Route exact path='/about' component={About} />
         </Router>
       </div >
     );
