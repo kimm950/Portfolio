@@ -37,10 +37,6 @@ class Portfolio extends Component {
                   />Portfolio
                 </Menu.Item>
               </Link>
-              <Link to='/'>
-                <Menu.Item as='a'>
-                  <Link to='/'>Home</Link></Menu.Item>
-              </Link>
               <Link to='/works'>
                 <Menu.Item as='a'>Works</Menu.Item>
               </Link>
