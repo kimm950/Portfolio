@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, List, Input, Dimmer, Loader, Image, Segment } from 'semantic-ui-react';
 import {
   BrowserRouter as Router,
@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 
 const Works = () => {
+  const [isActive, setActive] = useState(false)
+  const [isActive2, setActive2] = useState(false)
   return (
     <div className='work-container'>
       <div className='menu-dir' style={{ backgroundColor: '#272727', color: 'white', padding: '7em', height: '100vh' }}>
@@ -18,9 +20,9 @@ const Works = () => {
               color: '#0088FE',
             }} name='folder' />
             <List.Content>
-              <List.Header>works</List.Header>
+              <List.Header onClick={() => setActive(!isActive)}>works</List.Header>
               <List.Description>projects</List.Description>
-              <List.List>
+              {isActive && <List.List>
                 <List.Item>
                   <List.Icon style={{
                     color: '#FFBB28',
@@ -35,16 +37,16 @@ const Works = () => {
                     color: '#FF8042',
                   }} name='folder' />
                   <List.Content>
-                    <List.Header>design</List.Header>
+                    <List.Header onClick={() => setActive2(!isActive2)}>design</List.Header>
                     <List.Description>UI and UX // Graphic Design</List.Description>
-                    <List.List>
+                    {isActive2 && <List.List>
                       <List.Item>
                         <List.Icon style={{
                           color: '#00C49F',
                         }} name='folder' />
                         <List.Content>
                           <List.Header>ui_and_ux</List.Header>
-                          <List.Description>User Interface and Experiences Design works</List.Description>
+                          <List.Description> UI and UX Design works</List.Description>
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -58,10 +60,10 @@ const Works = () => {
                     </List.Description>
                         </List.Content>
                       </List.Item>
-                    </List.List>
+                    </List.List>}
                   </List.Content>
                 </List.Item>
-              </List.List>
+              </List.List>}
             </List.Content>
           </List.Item>
           <List.Item>
