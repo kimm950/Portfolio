@@ -31,13 +31,13 @@ const About = () => {
             <List.Item>
               <List.Icon name='mail' />
               <List.Content>
-                <a href='kimuo950@gmail.com'>kimuo950@gmail.com</a>
+                <a href='mailto:kimuo950@gmail.com'>kimuo950@gmail.com</a>
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name='github' />
               <List.Content>
-                <a href='https://github.com/kimm950'>https://github.com/kimm950</a>
+                <a href='https://github.com/kimm950' target='blank'>https://github.com/kimm950</a>
               </List.Content>
             </List.Item>
           </List>
