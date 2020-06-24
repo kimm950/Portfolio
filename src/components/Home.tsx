@@ -53,7 +53,7 @@ const Home = () => {
 
       </Header>
       <Header as='h2'>
-        <Icon name='book' />
+        <Icon name='graduation cap' />
         Education
           </Header>
       <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
@@ -77,7 +77,7 @@ const Home = () => {
       </Header>
 
       <Header as='h2'>
-        <Icon name='file code outline' />
+        <Icon name='code' />
         Skills
           </Header>
       <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
