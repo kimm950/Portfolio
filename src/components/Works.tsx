@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, List, Input } from 'semantic-ui-react';
+import { Container, List, Input, Dimmer, Loader, Image, Segment } from 'semantic-ui-react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -99,9 +99,10 @@ const Works = () => {
       </div>
       <Container text style={{ marginTop: '7em' }}>
 
-        <div>
-          works will be here
-    </div>
+        <div style={{ height: '500px', textAlign: 'center' }}>
+          works will be renderd here
+         <Loader active inline='centered' style={{ marginTop: '7em' }} />
+        </div>
       </Container>
     </div >
   )

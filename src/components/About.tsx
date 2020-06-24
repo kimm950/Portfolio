@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <Container text style={{ marginTop: '7em' }}>
         <div className='about-wrppper'>
-          <Card>
+          <Card style={{ marginBottom: '2em' }}>
             <Image src={`${Profile}`} wrapped ui={false} />
             <Card.Content>
               <Card.Header>Hyun Sung Kim</Card.Header>
@@ -15,7 +15,7 @@ const About = () => {
                 <span className='date'>Feb 17th 1995</span>
               </Card.Meta>
               <Card.Description>
-                Kim is a front-end developer living in Tokyo.
+                Hi! I am a front-end developer living in Tokyo.
       </Card.Description>
             </Card.Content>
           </Card>
