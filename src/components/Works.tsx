@@ -10,12 +10,14 @@ import {
 const Works = () => {
   const [isActive, setActive] = useState(false)
   const [isActive2, setActive2] = useState(false)
+  const [isActive3, setActive3] = useState(false)
+  const [isActive4, setActive4] = useState(false)
   return (
     <div className='work-container'>
-      <div className='menu-dir' style={{ backgroundColor: '#272727', color: 'white', padding: '7em', height: '100vh' }}>
+      <div className='menu-dir' style={{ backgroundColor: '#272727', color: 'white', padding: '7em', height: '100vh', width: '440px' }}>
         <Input icon='search' placeholder='Search...' style={{ width: '100%', marginBottom: '2em', }} />
         <List inverted>
-          <List.Item >
+          <List.Item>
             <List.Icon style={{
               color: '#0088FE',
             }} name='folder' />
@@ -71,9 +73,9 @@ const Works = () => {
               color: '#0088FE',
             }} name='folder' />
             <List.Content>
-              <List.Header>etc</List.Header>
+              <List.Header onDoubleClick={() => setActive3(!isActive3)}>etc</List.Header>
               <List.Description>Other works</List.Description>
-              <List.List>
+              {isActive3 && <List.List>
                 <List.Item>
                   <List.Icon style={{
                     color: '#02a104',
@@ -81,11 +83,11 @@ const Works = () => {
                   <List.Content>
                     <List.Header>video_motion_graphic</List.Header>
                     <List.Description>
-                      Adobe Premiere and After Effect
+                      PremierePro & AfterEffect
               </List.Description>
                   </List.Content>
                 </List.Item>
-              </List.List>
+              </List.List>}
             </List.Content>
           </List.Item>
           <List.Item>
