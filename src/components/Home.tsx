@@ -1,21 +1,15 @@
 import React from 'react'
 import {
   Container,
-  Divider,
-  Dropdown,
-  Grid,
   Header,
-  Image,
-  List,
-  Menu,
-  Segment,
+  Icon,
 } from 'semantic-ui-react';
 import Profile from '../images/profile.png'
 
 const Home = () => {
   return (
     <Container text style={{ marginTop: '7em' }}>
-      <Header as='h1'>Resume</Header>
+      <h3><Icon name='file outline' />Resume</h3>
       {/* <Image src={`${Profile}`} style={{ marginTop: '2em' }} size='small' circular /> */}
       <Header as='h1'>
         HYUN SUNG KIM
@@ -25,7 +19,8 @@ const Home = () => {
       </Header>
 
       <Header as='h2'>
-        Experience
+        <Icon name='briefcase' />
+          Experience
           </Header>
       <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
         ZEALS(ジールス), Tokyo, Japan
@@ -58,6 +53,7 @@ const Home = () => {
 
       </Header>
       <Header as='h2'>
+        <Icon name='book' />
         Education
           </Header>
       <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
@@ -81,35 +77,24 @@ const Home = () => {
       </Header>
 
       <Header as='h2'>
+        <Icon name='file code outline' />
         Skills
           </Header>
       <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        React
-          </Header>
-      <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        JavaScipt
-          </Header>
-      <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        TypeScript
-          </Header>
-      <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        UserExperience Design
-          </Header>
-      <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        Adobe
-          </Header>
-
+        JavaScipt || React || TypeScript || Redux || UI & UX Design
+        <Header.Subheader>
+          <Icon name='js' />
+          <Icon name='react' />
+          <Icon name='git square' />
+          <Icon name='sass' />
+        </Header.Subheader>
+      </Header>
       <Header as='h2'>
+        <Icon name='language' />
         Langages
           </Header>
       <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        English
-          </Header>
-      <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        Korean
-          </Header>
-      <Header as='h3' style={{ margin: '0 0 2em 1em' }}>
-        Japanese
+        English || Korean || Japanese
           </Header>
     </Container>
   )
