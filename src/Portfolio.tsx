@@ -25,7 +25,7 @@ class Portfolio extends Component {
     return (
       <div className='container'>
         <Router>
-          <Menu fixed='top' inverted>
+          <Menu fixed='top'>
             <Container>
               <Link to='/'>
                 <Menu.Item as='a' header>
@@ -34,7 +34,7 @@ class Portfolio extends Component {
                     size='mini'
                     circular
                     style={{ marginRight: '1.5em' }}
-                  />Portfolio
+                  />Resume
                 </Menu.Item>
               </Link>
               <Link to='/works'>
@@ -49,6 +49,7 @@ class Portfolio extends Component {
           <Route exact path='/works' component={Works} />
           <Route exact path='/about' component={About} />
         </Router>
+        <Segment vertical inverted style={{ textAlign: 'center', }}>© 2020 Hyun Sung Kim</Segment>
       </div >
     );
   }

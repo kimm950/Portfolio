@@ -14,7 +14,7 @@ const Works = () => {
   const [isActive4, setActive4] = useState(false)
   return (
     <div className='work-container'>
-      <div className='menu-dir' style={{ backgroundColor: '#272727', color: 'white', padding: '7em', height: '100vh', width: '440px' }}>
+      <div className='menu-dir' style={{ backgroundColor: '#272727', color: 'white', padding: '5em', height: '100vh', width: '440px', marginTop: '2em' }}>
         <Input icon='search' placeholder='Search...' style={{ width: '100%', marginBottom: '2em', }} />
         <List inverted>
           <List.Item>
