@@ -20,7 +20,7 @@ const Works = () => {
               color: '#0088FE',
             }} name='folder' />
             <List.Content>
-              <List.Header onClick={() => setActive(!isActive)}>works</List.Header>
+              <List.Header onDoubleClick={() => setActive(!isActive)}>works</List.Header>
               <List.Description>projects</List.Description>
               {isActive && <List.List>
                 <List.Item>
@@ -37,7 +37,7 @@ const Works = () => {
                     color: '#FF8042',
                   }} name='folder' />
                   <List.Content>
-                    <List.Header onClick={() => setActive2(!isActive2)}>design</List.Header>
+                    <List.Header onDoubleClick={() => setActive2(!isActive2)}>design</List.Header>
                     <List.Description>UI and UX // Graphic Design</List.Description>
                     {isActive2 && <List.List>
                       <List.Item>
