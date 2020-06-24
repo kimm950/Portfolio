@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <Container text style={{ marginTop: '7em' }}>
       <Header as='h1'>Resume</Header>
-      <Image src={`${Profile}`} style={{ marginTop: '2em' }} size='small' circular />
+      {/* <Image src={`${Profile}`} style={{ marginTop: '2em' }} size='small' circular /> */}
       <Header as='h1'>
         HYUN SUNG KIM
             <Header.Subheader>
