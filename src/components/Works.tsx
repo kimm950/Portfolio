@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, List } from 'semantic-ui-react';
+import { Container, List, Input } from 'semantic-ui-react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +11,7 @@ const Works = () => {
   return (
     <div className='work-container'>
       <div className='menu-dir' style={{ backgroundColor: '#272727', color: 'white', padding: '7em', height: '100vh' }}>
+        <Input icon='search' placeholder='Search...' style={{ width: '100%', marginBottom: '2em', }} />
         <List inverted>
           <List.Item >
             <List.Icon style={{
@@ -99,7 +100,7 @@ const Works = () => {
       <Container text style={{ marginTop: '7em' }}>
 
         <div>
-          works!
+          works will be here
     </div>
       </Container>
     </div >
