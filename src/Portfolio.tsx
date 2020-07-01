@@ -1,33 +1,33 @@
 import React, { Component } from 'react';
+//@ts-ignore
+import styled from 'styled-components'
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link
 } from "react-router-dom";
 import './Portfolio.css';
 import {
   Container,
-  Divider,
-  Dropdown,
-  Grid,
-  Header,
   Image,
-  List,
   Menu,
   Segment,
 } from 'semantic-ui-react';
 import { Home, Works, About } from './components'
 import Profile from './images/profile.png'
 
+const NavLink = styled(Link)`
+  height: 100%;
+`
+
 class Portfolio extends Component {
   render() {
     return (
       <div className='container'>
         <Router>
-          <Menu fixed='top'>
+          <Menu fixed='top' style={{ padding: 0 }}>
             <Container>
-              <Link to='/'>
+              <NavLink to='/'>
                 <Menu.Item as='a' header>
                   <Image
                     src={`${Profile}`}
@@ -36,13 +36,9 @@ class Portfolio extends Component {
                     style={{ marginRight: '1.5em' }}
                   />Resume
                 </Menu.Item>
-              </Link>
-              <Link to='/works'>
-                <Menu.Item as='a'>Works</Menu.Item>
-              </Link>
-              <Link to='/about'>
-                <Menu.Item as='a'>About</Menu.Item>
-              </Link>
+              </NavLink>
+              <NavLink to='/works'><Menu.Item as='a'>Works</Menu.Item></NavLink>
+              <NavLink to='/about'><Menu.Item as='a'>About</Menu.Item></NavLink>
             </Container>
           </Menu>
           <Route exact path='/' component={Home} />
