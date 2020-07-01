@@ -102,10 +102,9 @@ const Works = () => {
         </List>
       </div>
       <Container text style={{ marginTop: '7em' }}>
-
         <div style={{ height: '500px', textAlign: 'center' }}>
           works will be renderd here
-         <Loader active inline='centered' style={{ marginTop: '7em' }} />
+        <Loader active inline='centered' style={{ marginTop: '7em' }} />
         </div>
       </Container>
     </div >

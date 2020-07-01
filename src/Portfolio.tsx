@@ -25,7 +25,7 @@ class Portfolio extends Component {
     return (
       <div className='container'>
         <Router>
-          <Menu fixed='top' style={{ padding: 0 }}>
+          <Menu fixed='top' style={{ padding: '0px' }}>
             <Container>
               <NavLink to='/'>
                 <Menu.Item as='a' header>
